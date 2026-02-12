@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give | Mega Faith Prayer Ministries</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="MFPM Logo.png" alt="MFPM Logo" class="logo-img">
+                <h2>MEGA FAITH PRAYER MINISTRIES<span class="highlight"></span></h2>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list" id="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="give.html" class="btn-nav active">Give</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-small" style="background-image: url('hero-give.jpg');">
+        <div class="overlay"></div>
+        <div class="hero-content center-text fade-in">
+            <div class="badge">
+                <i class="fas fa-hand-holding-heart"></i> GIVE
+            </div>
+            <h1>YOUR GENEROSITY <br><span class="text-blue">CHANGES LIVES</span></h1>
+            <p class="hero-subtitle-small">Partner with us to reach 10 billion souls in more than ten thousand cities with the message of the gospel.</p>
+        </div>
+    </header>
+
+    <section class="section giving-body">
+        <div class="container">
+            <div class="give-intro center-text">
+                <h2>WAYS TO GIVE</h2>
+                <p>Join us as we put our faith into action, partnering with God for the advancement of His kingdom.</p>
+            </div>
+
+            <div class="toggle-container">
+                <button class="toggle-btn active" onclick="switchCurrency('naira')" aria-label="Switch to Naira accounts">
+                    <i class="fas fa-naira-sign"></i> NAIRA ACCOUNT
+                </button>
+                <button class="toggle-btn" onclick="switchCurrency('dom')" aria-label="Switch to foreign currency accounts">
+                    <i class="fas fa-globe"></i> DOMICILIARY ACCOUNT
+                </button>
+            </div>
+
+            <div id="naira-view" class="account-view fade-in">
+                
+                <div class="bank-card">
+                    <div class="bank-header">
+                        <h3><i class="fas fa-university"></i> Zenith Bank</h3>
+                        <span class="flag-icon">🇳🇬</span>
+                    </div>
+                    
+                    <div class="account-row">
+                        <span class="account-label">
+                            <i class="fas fa-gift"></i> OFFERING/TITHE
+                        </span>
+                        <div class="copy-box" onclick="copyText('1223491145')" role="button" tabindex="0">
+                            <strong>1223491145</strong>
+                            <i class="far fa-copy"></i>
+                        </div>
+                    </div>
+                    <div class="account-row">
+                        <span class="account-label">
+                            <i class="fas fa-building"></i> BUILDING
+                        </span>
+                        <div class="copy-box" onclick="copyText('1228895494')" role="button" tabindex="0">
+                            <strong>1228895494</strong>
+                            <i class="far fa-copy"></i>
+                        </div>
+                    </div>
+                    <p class="account-name">MEGA FAITH PRAYER MINISTRIES</p>
+                </div>
+
+                <div class="bank-card">
+                    <div class="bank-header">
+                        <h3><i class="fas fa-university"></i> Access Bank</h3>
+                        <span class="flag-icon">🇳🇬</span>
+                    </div>
+                    <div class="account-row">
+                        <span class="account-label">
+                            <i class="fas fa-seedling"></i> SEED
+                        </span>
+                        <div class="copy-box" onclick="copyText('1685230151')" role="button" tabindex="0">
+                            <strong>1685230151</strong>
+                            <i class="far fa-copy"></i>
+                        </div>
+                    </div>
+                    <p class="account-name">MEGA FAITH PRAYER MINISTRIES</p>
+                </div>
+
+                <div class="bank-card">
+                    <div class="bank-header">
+                        <h3><i class="fas fa-mobile-alt"></i> OPAY (PAYCOM)</h3>
+                        <span class="flag-icon">🇳🇬</span>
+                    </div>
+                    <div class="account-row">
+                        <span class="account-label">
+                            <i class="fas fa-hand-holding-usd"></i> GENERAL
+                        </span>
+                        <div class="copy-box" onclick="copyText('7034349891')" role="button" tabindex="0">
+                            <strong>7034349891</strong>
+                            <i class="far fa-copy"></i>
+                        </div>
+                    </div>
+                    <p class="account-name">MEGA FAITH PRAYER MINISTRIES</p>
+                </div>
+
+            </div>
+
+            <div id="dom-view" class="account-view" style="display: none;">
+                
+                <div class="bank-card">
+                    <div class="bank-header">
+                        <h3><i class="fas fa-globe"></i> Stanbic IBTC Bank</h3>
+                        <span class="international-badge">
+                            <i class="fas fa-plane"></i> International
+                        </span>
+                    </div>
+                    <div class="account-info">
+                        <p><strong>Sort Code:</strong> 80892</p>
+                        <p><strong>Account Name:</strong> MEGA FAITH PRAYER MINISTRIES</p>
+                    </div>
+
+                    <div class="account-row">
+                        <span class="account-label">
+                            <span class="circle-icon"><i class="fas fa-dollar-sign"></i></span> USD ACCOUNT
+                        </span>
+                        <div class="copy-box" onclick="copyText('0064035072')" role="button" tabindex="0">
+                            <strong>0064035072</strong>
+                            <i class="far fa-copy"></i>
+                        </div>
+                    </div>
+
+                    <div class="account-row">
+                        <span class="account-label">
+                            <span class="circle-icon-purple"><i class="fas fa-pound-sign"></i></span> GBP ACCOUNT
+                        </span>
+                        <div class="copy-box" onclick="copyText('0067017121')" role="button" tabindex="0">
+                            <strong>0067017121</strong>
+                            <i class="far fa-copy"></i>
+                        </div>
+                    </div>
+
+                    <div class="account-row">
+                        <span class="account-label">
+                            <span class="circle-icon-blue"><i class="fas fa-euro-sign"></i></span> EURO ACCOUNT
+                        </span>
+                        <div class="copy-box" onclick="copyText('0067017138')" role="button" tabindex="0">
+                            <strong>0067017138</strong>
+                            <i class="far fa-copy"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>CONNECT</h4>
+                    <ul>
+                        <li><a href="contact.html">Become a member</a></li>
+                        <li><a href="contact.html#prayer">Prayer Request</a></li>
+                        <li><a href="contact.html">First Timers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>MINISTRIES</h4>
+                    <ul>
+                        <li><a href="programs.html">MFPM Worship</a></li>
+                        <li><a href="programs.html">Mega Teens</a></li>
+                        <li><a href="programs.html">Mega Kids</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>RESOURCES</h4>
+                    <ul>
+                        <li><a href="programs.html">Membership Classes</a></li>
+                        <li><a href="events.html">Celebrations</a></li>
+                        <li><a href="contact.html">Counselling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>MEDIA</h4>
+                    <ul>
+                        <li><a href="#">Watch Online</a></li>
+                        <li><a href="blog.html">Sermons</a></li>
+                        <li><a href="events.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; Copyright 2026 Mega Faith Prayer Ministries. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61582772900876" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
